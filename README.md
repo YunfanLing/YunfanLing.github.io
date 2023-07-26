@@ -1,6 +1,12 @@
 # YunfanLing.github.io
 Dailly check in for 算法随想录
 
+## Table of Contents
+
+- [7.26 First day](#726-first-day)
+  - [Binary Search](#binary-search)
+  - [Remove Elements](#remove-elements)
+
 ## 7.26 First day
 
 ### Binary search
