@@ -22,7 +22,7 @@ public:
 ```
 
 3D solution
-```
+```CPP
 class Solution {
 public:
     int maxProfit(vector<int>& prices) {
