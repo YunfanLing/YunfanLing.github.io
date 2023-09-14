@@ -43,4 +43,27 @@ public:
 };
 ```
 
-##
+## 
+Similar to the above one but just use loop to generate each j status
+```CPP
+class Solution {
+public:
+    int maxProfit(int k, vector<int>& prices) {
+        vector<vector<int>> dp(prices.size(),vector<int>(2*k+1,0));
+        for(int i = 1; i<2*k+1; i++){
+            if(i%2!=0) dp[0][i] = -prices[0];
+        }
+        for(int i = 1; i<prices.size(); i++){
+            for(int j = 1; j<2*k+1; j++){
+                dp[i][j] = j % 2 == 0 ? max(dp[i-1][j], dp[i-1][j-1] + prices[i]) : max(dp[i-1][j], dp[i-1][j-1] - prices[i]);
+
+            }
+        }
+        int result = 0;
+        for(int profit:dp.back()){
+            result = max(result,profit);
+        }
+        return result;
+    }
+};
+```
