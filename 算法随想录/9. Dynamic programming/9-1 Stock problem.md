@@ -1,4 +1,4 @@
-##
+## [123. Best Time to Buy and Sell Stock III](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iii/)
 dp[i][0] the second number is how many transaction we make(buy or sell)
 
 Noticed that dp[0][3] is -prices[0] since we can buy sell at day 0th and then buy again;
@@ -43,7 +43,7 @@ public:
 };
 ```
 
-## 
+## [188. Best Time to Buy and Sell Stock IV](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iv/)
 Similar to the above one but just use loop to generate each j status
 ```CPP
 class Solution {
